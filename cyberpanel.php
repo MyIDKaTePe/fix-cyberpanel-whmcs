@@ -296,7 +296,7 @@ function cyberpanel_TestConnection(array $params)
 
 function cyberpanel_ClientArea($params) {
 
-    $loginform = '<form class="cyberpanel" action="' . (($params["serversecure"]) ? "https" : "http") . '://'.$params["serverhostname"].':'.$params['serverport'].'/api/loginAPI" method="post" target="_blank">
+    $loginform = '<form class="cyberpanel" action="' . (($params["serversecure"]) ? "https" : "http") . '://'.$params["serverhostname"].':'.$params['serverport'].'" method="post" target="_blank">
 <input type="hidden" name="username" value="'.$params["username"].'" />
 <input type="hidden" name="password" value="'.$params["password"].'" />
 <input type="submit" value="Login to Control Panel" />
